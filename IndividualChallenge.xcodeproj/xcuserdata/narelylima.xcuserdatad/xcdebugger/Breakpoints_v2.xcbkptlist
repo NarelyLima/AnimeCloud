@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "9586FD45-2CB6-4CF3-8E47-A37FB3D0AADB"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B2469A3A-D264-445C-951C-6FB0A0BC3667"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IndividualChallenge/AnimeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0F2FC767-7F9C-4431-B625-88173E4CC241"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IndividualChallenge/SceneDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "scene(_:willConnectTo:options:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D37ED17E-2B03-4BD1-B2A2-2AD098309415"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IndividualChallenge/AnimeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "fetchAnimes()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D37ED17E-2B03-4BD1-B2A2-2AD098309415 - 7b324df8562584d8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IndividualChallenge.AnimeViewController.fetchAnimes() async throws -&gt; Swift.Array&lt;IndividualChallenge.AnimesModel&gt;"
+                  moduleName = "IndividualChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/narelylima/Documents/iOS/IndividualChallenge/IndividualChallenge/AnimeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "168">
+               </Location>
+               <Location
+                  uuid = "D37ED17E-2B03-4BD1-B2A2-2AD098309415 - 63298c78c1345244"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for IndividualChallenge.AnimeViewController.fetchAnimes() async throws -&gt; Swift.Array&lt;IndividualChallenge.AnimesModel&gt;"
+                  moduleName = "IndividualChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/narelylima/Documents/iOS/IndividualChallenge/IndividualChallenge/AnimeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1999A13B-7ABC-49BA-899E-6FECF080B299"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IndividualChallenge/AnimeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "fetchAnimes()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1999A13B-7ABC-49BA-899E-6FECF080B299 - 63298c78c13452ff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for IndividualChallenge.AnimeViewController.fetchAnimes() async throws -&gt; Swift.Array&lt;IndividualChallenge.AnimesModel&gt;"
+                  moduleName = "IndividualChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/narelylima/Documents/iOS/IndividualChallenge/IndividualChallenge/AnimeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "1999A13B-7ABC-49BA-899E-6FECF080B299 - 63298c78c13452ff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for IndividualChallenge.AnimeViewController.fetchAnimes() async throws -&gt; Swift.Array&lt;IndividualChallenge.AnimesModel&gt;"
+                  moduleName = "IndividualChallenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/narelylima/Documents/iOS/IndividualChallenge/IndividualChallenge/AnimeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "220">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
