@@ -4,22 +4,11 @@
 
 <!--ts-->
    * [Sobre](#Sobre)
-   * [Tabela de Conteudo](#tabela-de-conteudo)
+   <p align="center"> Essa aplicação busca consumir uma API de animes e mangas, a fim de selecionar seus favoritos por meio do CoreData</p>
    * [Instalação](#instalacao)
-   * [Como usar](#como-usar)
-      * [Pre Requisitos](#pre-requisitos)
-      * [Local files](#local-files)
-      * [Remote files](#remote-files)
-      * [Multiple files](#multiple-files)
-      * [Combo](#combo)
-   * [Tests](#testes)
-   * [Tecnologias](#tecnologias)
-<!--te-->
-### Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina o seguinte editor:
 [XCode](https://apps.apple.com/br/app/xcode/id497799835?mt=12)
-
 
 ### 🎲 Clonando o Repositório
 
