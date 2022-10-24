@@ -11,13 +11,13 @@ import UIKit
 class AnimeViewController: UIViewController {
 
     var animesList: [AnimesModel] = [] {
+    // Executa um codigo depois de uma atualizacao 
         didSet {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
         }
     }
-
     enum AnimesFetcherError: Error {
         case invalidURL
         case missingData
@@ -44,7 +44,7 @@ class AnimeViewController: UIViewController {
         configConstraints()
         fetchApi()
     }
-    private func configConstraints() {
+    func configConstraints() {
         NSLayoutConstraint.activate([
             self.tableView.topAnchor.constraint(equalTo: self.view.topAnchor),
             self.tableView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
@@ -57,7 +57,7 @@ class AnimeViewController: UIViewController {
             do {
                 animesList = try await fetchAnimes()
             } catch {
-                print("Deu erro boy")
+                print(error)
             }
         }
     }
@@ -66,7 +66,7 @@ class AnimeViewController: UIViewController {
         // a funcao fetchAnimesAsync para acionar a solicitacao
         // de rede de forma assincrona
         // validacao da api
-        guard let url = URL(string: "https://kitsu.io/api/edge/anime/") else {
+        guard let url = URL(string: "https://kitsu.io/api/edge/anime") else {
             throw AnimesFetcherError.invalidURL
         }
         // caso seja verdade executar o que esta dentro do do catch
@@ -75,8 +75,8 @@ class AnimeViewController: UIViewController {
         // primeiro carregamos um jSON e, em seguida, decodificamos os dados desse JSON de um
         // determinado URL
         let (data, _) = try await URLSession.shared.data(from: url)
-        let responsedAnimes = try JSONDecoder().decode([AnimesModel].self, from: data)
-        return responsedAnimes
+        let responsedAnimes = try JSONDecoder().decode(Response.self, from: data)
+        return responsedAnimes.data
     }
 }
 // EXTENSAO DA CLASSE PARA ESPECIFICAR OS DELEGADOS E CONTEUDOS
@@ -93,11 +93,21 @@ extension AnimeViewController: UITableViewDelegate, UITableViewDataSource {
             for: indexPath
         ) as? AnimesTableViewCell else { return UITableViewCell() }
         let animes = self.animesList[indexPath.row]
-        cell.imageViewAnimes.image = UIImage(named: animes.posterImage)
-        //        cell.titleViewAnimes.text = animes.canonicalTitle
-        //        cell.synopsisViewAnimes.text = animes.synopsis
-        //        cell.avaregeViewAnimes.text = animes.averageRating
+        // atribuindo as variaveis da API
+        // as variaveis inseridas na celula de visualizacao
+        cell.imageViewAnimes.addImageFromURL(urlString: animes.attributes.posterImage.original)
+        cell.titleViewAnimes.text = animes.attributes.canonicalTitle
+        cell.synopsisViewAnimes.text = animes.attributes.synopsis
+        cell.avaregeViewAnimes.text = animes.attributes.averageRating
         return cell
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UIScreen.main.bounds.height/4
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailViewAnime = DetailsAnimes()
+        detailViewAnime.animeModel = self.animesList[indexPath.row]
+        navigationController?.pushViewController(detailViewAnime, animated: true)
     }
 
 }
